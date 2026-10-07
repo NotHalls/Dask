@@ -1,5 +1,25 @@
-# Folders
+# Personal
 _IGNORE_*
 
-# Files
-*.env
+### Python Stuff ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables (Crucial for Postgres credentials)
+.env
+
+# Local database mounts (If running Postgres locally via Docker/compose)
+postgres_data/
+pgdata/
+*.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
