@@ -12,6 +12,10 @@ class Settings(BaseSettings):
   POSTGRES_DB: str
   DB_PORT: int
 
+  JWT_SECRET: str
+  JWT_ALGORITHM: str = "HS256"
+  ACCESS_TOKEN_MINUTES: int = 60 # in minutes
+
   @property
   def database_url(self) -> str:
     return(

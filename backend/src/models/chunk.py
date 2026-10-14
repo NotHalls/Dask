@@ -2,7 +2,7 @@ from pgvector.sqlalchemy import Vector
 from sqlalchemy import Text, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
 
-from src.models.base import Base
+from models.base import Base
 
 # Our embedding ai model's output limit
 EMBEDDING_LIMIT = 384
